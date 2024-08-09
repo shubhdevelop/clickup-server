@@ -1,0 +1,42 @@
+DATABASE connection flavour
+
+/*
+import express from "express";
+const app = express();
+//Always use aysnc await and wrap it inside try catch
+try {
+  mongoose.connect();
+} catch (error) {}
+
+(async () => {
+  try {
+    await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
+    app.on("error", (err) => {
+      console.log("ERR: ", err);
+      throw error;
+    });
+
+    app.listen(process.env.PORT, () => {
+      console.log(`App is listening on port ${process.env.PORT}`);
+    });
+  } catch (error) {
+    console.error("ERROR: ", error);
+    throw error;
+  }
+})();
+*/
+
+
+
+/*
+const asyncHandler = (requestHandler) => async (req, res, next) => {
+    try {
+      await requestHandler(req, res, next)
+    } catch (error) {
+      res.status(err.code || 500).json({
+        success: false,
+        message: err.message,
+      });
+    }
+  };
+*/
